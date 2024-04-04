@@ -36,3 +36,26 @@ covertinArray.forEach((buttons) => {
         }
     })
 })
+
+
+// Theme changing script
+
+const radios = document.querySelectorAll('.toggle');
+
+radios.forEach((button) => {
+    button.addEventListener("change", (event) => {
+        const selectedTheme = event.target.id;
+
+        if (selectedTheme === "first") {
+            document.body.classList.remove("secondtheme");
+            document.body.classList.remove("thirdtheme");
+        } else if (selectedTheme === "second") {
+            document.body.classList.add("secondtheme");
+            document.body.classList.remove("thirdtheme");
+        } else if (selectedTheme === "third") {
+            document.body.classList.remove("secondtheme");
+            document.body.classList.add("thirdtheme");
+        }
+        
+    });
+});
