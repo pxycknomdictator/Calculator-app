@@ -16,7 +16,7 @@ The designs were created to the following widths:
 #### Backgrounds
 
 - Very dark desaturated blue (main background): hsl(222, 26%, 31%)
-- Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
+- Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%) 
 - Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
 
 #### Keys
@@ -63,7 +63,7 @@ The designs were created to the following widths:
 
 #### Backgrounds
 
-- Very dark violet (main background): hsl(268, 75%, 9%)
+<!-- - Very dark violet (main background): hsl(268, 75%, 9%) -->
 - Very dark violet (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
 
 #### Keys
@@ -79,9 +79,9 @@ The designs were created to the following widths:
 
 #### Text
 
-- Light yellow: hsl(52, 100%, 62%)
+<!-- - Light yellow: hsl(52, 100%, 62%) -->
 - Very dark blue: hsl(198, 20%, 13%)
-- White (text): hsl(0, 0%, 100%)
+<!-- - White (text): hsl(0, 0%, 100%) -->
 
 ## Typography
 
