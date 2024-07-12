@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
+
+/* Css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Utilities Classes */
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  text-align: center;
+}
+
+.block {
+  display: inline-block;
+}
+
+.responsive-img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.weight {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.background {
+  background: var(--calculate-btn);
+}
+
+/* variables */
+
+:root {
+  --main-body: hsl(222, 26%, 31%);
+  --calculator-body: hsl(223, 31%, 20%);
+  --input-body: hsl(224, 36%, 15%);
+  --reset-btn: hsl(225, 21%, 49%);
+  --calculate-btn: hsl(6, 63%, 50%);
+  --btn-text-color: #4b505b;
+  --text-color: white;
+  --btn-background: hsl(32, 26%, 89%);
+  --text-color: white;
+}
+
+.secondtheme {
+  --main-body: hsl(0, 0%, 90%);
+  --calculator-body: hsl(0, 5%, 81%);
+  --input-body: hsl(0, 0%, 100%);
+  --reset-btn: hsl(185, 42%, 37%);
+  --calculate-btn: hsl(25, 98%, 40%);
+  --btn-text-color: hsl(60, 10%, 19%);
+  --text-color: hsl(60, 10%, 19%);
+  --btn-background: hsl(15, 7%, 89%);
+}
+
+.thirdtheme {
+  --main-body: hsl(268, 75%, 9%);
+  --calculator-body: hsl(269, 74%, 12%);
+  --input-body: hsl(269, 74%, 12%);
+  --reset-btn: hsl(281, 89%, 26%);
+  --calculate-btn: hsl(176, 100%, 44%);
+  --btn-text-color: hsl(52, 100%, 62%);
+  --text-color: hsl(52, 100%, 62%);
+  --btn-background: hsl(268, 47%, 21%);
+}
+
+/*-Main Css */
+
+html,
+body {
+  font-size: 10px;
+  background: var(--main-body);
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  width: 400px;
+}
+
+.header {
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+#adjust {
+  gap: 1.8rem;
+  top: -14px;
+  font-weight: bolder;
+  right: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+p {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.toggle-box {
+  gap: 2rem;
+}
+
+label {
+  display: none;
+}
+
+.toggle-btn {
+  padding: 4px;
+  gap: 1rem;
+  border-radius: 2pc;
+  background: var(--calculator-body);
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  border-radius: 50%;
+
+  &:checked {
+    background: var(--calculate-btn);
+  }
+}
+
+.calculator-body {
+  width: 100%;
+  padding: 2rem;
+  gap: 1.7rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+  border-radius: 9px;
+  background: var(--calculator-body);
+}
+
+#display {
+  width: 100%;
+  padding: 30px 20px 30px 0px;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-align: right;
+  font-weight: bolder;
+  border: none;
+  border-radius: 9px;
+  background: var(--input-body);
+  color: var(--text-color);
+
+  &::placeholder {
+    color: var(--text-color);
+  }
+}
+
+.btn {
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding-block: 1.4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bolder;
+  color: var(--btn-text-color);
+  background: var(--btn-background);
+}
+
+#reset {
+  grid-area: 5 / 1 / 6 / 3;
+  background: var(--reset-btn);
+  color: white;
+}
+
+#calculate {
+  grid-area: 5 / 3 / 6 / 5;
+  background: var(--calculate-btn);
+  color: white;
+}
+
+#clear {
+  background: var(--reset-btn);
+  color: white;
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 7px;
+  }
+}
