@@ -1,14 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator-app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Calculator app</title>
   </head>
-  <body>
 
-    
+  <body>
+    <main class="flex items-center justify-center">
+      <section class="main-container">
+        <div class="header flex items-center">
+          <h1>Calc</h1>
+          <div class="toggle-box flex items-center relative">
+            <p>Theme</p>
+            <p id="adjust" class="absolute flex">
+              <span>1</span><span>2</span><span>3</span>
+            </p>
+            <div class="toggle-btn flex items-center">
+              <input
+                class="hover toggle"
+                id="first"
+                type="radio"
+                name="drone"
+              />
+              <label for="first">click</label>
+              <input
+                class="hover toggle"
+                id="second"
+                type="radio"
+                name="drone"
+              />
+              <label for="second">sclick</label>
+              <input
+                class="hover toggle"
+                id="third"
+                type="radio"
+                name="drone"
+              />
+              <label for="third">ssclick</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator-box">
+          <div class="display-container">
+            <input type="text" id="display" placeholder="0" />
+          </div>
+
+          <div class="calculator-body grid">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button id="clear" class="btn">DEL</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">+</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+            <button class="btn">.</button>
+            <button class="btn">0</button>
+            <button class="btn">/</button>
+            <button class="btn">*</button>
+            <button id="reset" class="btn">RESET</button>
+            <button id="calculate" class="btn">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
